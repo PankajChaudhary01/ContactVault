@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar-e {
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(14px);
+    padding: 16px 28px;
+    margin-bottom: 25px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* GLASS CARDS */
+.e-card, .contact-form, .keypad-container {
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(14px);
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* PHONE DISPLAY */
+.phone-screen {
+    background: rgba(255,255,255,0.18);
+    padding: 18px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    box-shadow: inset 0 0 18px rgba(0,0,0,0.3);
+}
+
+/* KEYPAD WRAPPER */
+.key-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.key-btn {
+    width: 85px;
+    height: 85px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+}
+
+/* ABC DEF text */
+.key-sub {
+    font-size: 12px;
+    opacity: 0.75;
+    margin-top: -5px;
+    font-weight: 400;
+}
+
+/* HOVER */
+.key-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* ACTIVE */
+.key-btn:active {
+    transform: scale(0.92);
+    background: #2563eb;
+    box-shadow: 0 0 35px #2563eb;
+}
+
+/* RIPPLE EFFECT */
+.key-btn::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    transition: .4s;
+    opacity: 0;
+}
+
+.key-btn:active::after {
+    width: 200px;
+    height: 200px;
+    opacity: 0.25;
+    left: -60px;
+    top: -60px;
+}
+
+/* BUTTON GLOBAL */
+.btn-e {
+    background: #2563eb;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    transition: .2s;
+}
+
+.btn-e:hover {
+    transform: translateY(-2px);
+    background: #1d4ed8;
+}
