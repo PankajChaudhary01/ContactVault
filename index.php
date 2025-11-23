@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="enterprise.css">
 
 <nav class="navbar-e">
-    <span class="h4">Contacts — Enterprise</span>
+    <span class="h4">ContactVault</span>
 </nav>
 
 <div class="container mt-4">
